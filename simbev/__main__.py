@@ -16,7 +16,7 @@ def main():
     )
     parser.add_argument(
         "config_path",
-        default="scenarios/default/configs/default.cfg",
+        default="simbev/scenarios/default/configs/default.cfg",
         nargs="?",
         help="Set the config path.",
     )

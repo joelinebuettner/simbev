@@ -11,6 +11,7 @@ from typing import List
 
 import pandas as pd
 import numpy as np
+import os
 
 from simbev.helpers import helpers
 from simbev.region import Region, RegionType
