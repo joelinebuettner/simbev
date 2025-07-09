@@ -754,10 +754,11 @@ class Car:
         bool
             Returns if drive is possible.
         """
-        if duration <= 0:
-            raise ValueError(
+        if duration < 0:
+            print(
                 f"Drive duration of vehicle {self.file_name} is {duration} at {timestamp}"
             )
+            return False
         if extra_urban:
             soc_delta = (
                 self.car_type.consumption
